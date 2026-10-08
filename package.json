@@ -1,0 +1,22 @@
+{
+  "name": "spider-web-x",
+  "version": "1.0.0",
+  "private": true,
+  "description": "🕸️ SPIDER WEB ⸸ X — modular Discord bot. Owner: NIGHTMARE",
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "deploy": "node src/deploy-commands.js",
+    "deploy:global": "node src/deploy-commands.js --global",
+    "clear": "node src/deploy-commands.js --clear",
+    "syntax-check": "find src -name '*.js' -print0 | xargs -0 -n1 node --check && echo '🕸️ every file parsed'"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5"
+  }
+}
